@@ -1,0 +1,22 @@
+========================================
+  ALT GAMING PLATFORM - HOW TO OPEN
+========================================
+
+To see the site WITH the dark theme and neon style:
+
+1. Open this folder in File Explorer:
+   C:\Users\frezz\altgamingplatform
+
+2. Double-click:  index.html
+
+3. It will open in your default browser. You should see:
+   - Dark background (almost black)
+   - Cyan and magenta "[ALT GAMING]" logo
+   - "Play. Compete. Dominate." in big text
+
+If you still see a WHITE page with plain black text:
+- You may be opening a different file or an old copy.
+- Make sure the folder path is exactly: C:\Users\frezz\altgamingplatform
+- Try right-click index.html -> Open with -> Chrome (or Edge)
+
+Secret: Triple-click the [ALT GAMING] logo to reveal the admin link.
