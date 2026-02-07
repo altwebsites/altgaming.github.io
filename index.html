@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AltGamingPlatform — Where Gamers Rise</title>
+  <meta name="theme-color" content="#0a0a0f">
+  <meta name="description" content="Next-gen gaming platform. Thousands of games. One launcher.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
+  <div class="glow-orb glow-orb-3" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo" id="secret-trigger" title="AltGamingPlatform">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">ALT</span>
+        <span class="logo-accent">GAMING</span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#games">Games</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#launcher">Launcher</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn btn-ghost" id="btn-login" type="button">Log in</button>
+        <button class="btn btn-primary" id="btn-join" type="button">Join free</button>
+      </div>
+    </nav>
+    <div class="hero">
+      <p class="hero-tag">Next-gen platform • Zero ads • Your library, one place</p>
+      <h1 class="hero-title">
+        <span class="hero-line">Play.</span>
+        <span class="hero-line hero-line-accent">Compete.</span>
+        <span class="hero-line">Dominate.</span>
+      </h1>
+      <p class="hero-desc">Thousands of games. One launcher. No compromises. Welcome to the alt.</p>
+      <div class="hero-cta">
+        <button class="btn btn-large btn-primary" id="btn-download-hero" type="button">Download launcher</button>
+        <button class="btn btn-large btn-outline" id="btn-browse-games" type="button">Browse games</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">2.4M+</span><span class="stat-label">Players online</span></div>
+        <div class="stat"><span class="stat-num">12K+</span><span class="stat-label">Games</span></div>
+        <div class="stat"><span class="stat-num">99.9%</span><span class="stat-label">Uptime</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="games" class="section section-games">
+      <h2 class="section-title"><span class="title-bracket">[</span> Featured games</h2>
+      <div class="game-grid">
+        <article class="game-card">
+          <div class="game-card-bg" style="--hue: 200;"></div>
+          <div class="game-card-content">
+            <span class="game-badge">New</span>
+            <h3>Neon Drift</h3>
+            <p>Cyberpunk racer • 4.9★</p>
+            <button class="btn btn-small game-play-btn" type="button" data-game="Neon Drift">Play now</button>
+          </div>
+        </article>
+        <article class="game-card">
+          <div class="game-card-bg" style="--hue: 280;"></div>
+          <div class="game-card-content">
+            <span class="game-badge">Hot</span>
+            <h3>Void Siege</h3>
+            <p>Co-op shooter • 4.8★</p>
+            <button class="btn btn-small game-play-btn" type="button" data-game="Void Siege">Play now</button>
+          </div>
+        </article>
+        <article class="game-card">
+          <div class="game-card-bg" style="--hue: 340;"></div>
+          <div class="game-card-content">
+            <h3>Pixel Legends</h3>
+            <p>Roguelike • 4.7★</p>
+            <button class="btn btn-small game-play-btn" type="button" data-game="Pixel Legends">Play now</button>
+          </div>
+        </article>
+        <article class="game-card">
+          <div class="game-card-bg" style="--hue: 160;"></div>
+          <div class="game-card-content">
+            <h3>Storm Arena</h3>
+            <p>Battle royale • 4.6★</p>
+            <button class="btn btn-small game-play-btn" type="button" data-game="Storm Arena">Play now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" class="section section-news">
+      <h2 class="section-title"><span class="title-bracket">[</span> Latest news</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-card-line"></div>
+          <h3>Season 6 Battle Pass is live</h3>
+          <p>New skins, challenges, and exclusive rewards. Ends March 15.</p>
+          <span class="news-date">Feb 7, 2026</span>
+        </article>
+        <article class="news-card">
+          <div class="news-card-line"></div>
+          <h3>Server maintenance complete</h3>
+          <p>EU West and NA East now running on new hardware. Lower latency for everyone.</p>
+          <span class="news-date">Feb 6, 2026</span>
+        </article>
+        <article class="news-card">
+          <div class="news-card-line"></div>
+          <h3>Developer AMA this Friday</h3>
+          <p>Join the Void Siege team for Q&A and sneak peeks at the next update.</p>
+          <span class="news-date">Feb 5, 2026</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="community" class="section section-community">
+      <h2 class="section-title"><span class="title-bracket">[</span> Join the community</h2>
+      <div class="community-cards">
+        <div class="community-card">
+          <div class="community-icon">🎮</div>
+          <h3>Discord</h3>
+          <p>Chat, LFG, and dev updates</p>
+          <a href="#" class="link-arrow">Join server →</a>
+        </div>
+        <div class="community-card">
+          <div class="community-icon">🏆</div>
+          <h3>Leaderboards</h3>
+          <p>Compete and climb the ranks</p>
+          <a href="#" class="link-arrow">View rankings →</a>
+        </div>
+        <div class="community-card">
+          <div class="community-icon">📺</div>
+          <h3>Streaming</h3>
+          <p>Go live with one click</p>
+          <a href="#" class="link-arrow">Learn more →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="launcher" class="section section-cta">
+      <div class="cta-box">
+        <h2>Ready to play?</h2>
+        <p>Download the AltGaming launcher for Windows, Mac, or Linux. Free forever.</p>
+        <button class="btn btn-large btn-primary" id="btn-download-windows" type="button">Download for Windows</button>
+        <div class="cta-links">
+          <a href="#" id="link-download-mac">macOS</a>
+          <a href="#" id="link-download-linux">Linux</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">[ALT GAMING]</a>
+      <div class="footer-links">
+        <a href="#">Support</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Careers</a>
+      </div>
+      <p class="footer-copy">© 2026 AltGamingPlatform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Secret admin hint (revealed on triple-click logo) -->
+  <div id="admin-hint" class="admin-hint" hidden>
+    <a href="internal/x7k9-panel.html">🔐 Admin</a>
+  </div>
+
+  <!-- Toast container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Modals -->
+  <div id="modal-overlay" class="modal-overlay" hidden aria-hidden="true">
+    <div id="modal-login" class="modal" role="dialog" aria-labelledby="modal-login-title" hidden>
+      <button type="button" class="modal-close" id="close-login" aria-label="Close">&times;</button>
+      <h2 id="modal-login-title" class="modal-title">Log in</h2>
+      <form id="form-login" class="modal-form">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" placeholder="you@example.com" required autocomplete="email">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="••••••••" required autocomplete="current-password">
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      </form>
+    </div>
+    <div id="modal-join" class="modal" role="dialog" aria-labelledby="modal-join-title" hidden>
+      <button type="button" class="modal-close" id="close-join" aria-label="Close">&times;</button>
+      <h2 id="modal-join-title" class="modal-title">Join free</h2>
+      <form id="form-join" class="modal-form">
+        <label for="join-email">Email</label>
+        <input type="email" id="join-email" placeholder="you@example.com" required autocomplete="email">
+        <label for="join-username">Username</label>
+        <input type="text" id="join-username" placeholder="GamerTag" required autocomplete="username">
+        <label for="join-password">Password</label>
+        <input type="password" id="join-password" placeholder="••••••••" required autocomplete="new-password" minlength="8">
+        <button type="submit" class="btn btn-primary btn-block">Create account</button>
+      </form>
+    </div>
+    <div id="modal-download" class="modal" role="dialog" aria-labelledby="modal-download-title" hidden>
+      <button type="button" class="modal-close" id="close-download" aria-label="Close">&times;</button>
+      <h2 id="modal-download-title" class="modal-title">Download launcher</h2>
+      <p class="modal-desc">Choose your platform. The launcher is free and includes the full game library.</p>
+      <div class="download-options">
+        <button type="button" class="download-option active" data-platform="Windows">
+          <span class="download-icon">🪟</span>
+          <span class="download-name">Windows</span>
+          <span class="download-size">~85 MB</span>
+        </button>
+        <button type="button" class="download-option" data-platform="macOS">
+          <span class="download-icon">🍎</span>
+          <span class="download-name">macOS</span>
+          <span class="download-size">~92 MB</span>
+        </button>
+        <button type="button" class="download-option" data-platform="Linux">
+          <span class="download-icon">🐧</span>
+          <span class="download-name">Linux</span>
+          <span class="download-size">~78 MB</span>
+        </button>
+      </div>
+      <button type="button" class="btn btn-large btn-primary btn-block" id="btn-download-confirm">Download for Windows</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

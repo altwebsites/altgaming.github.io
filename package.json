@@ -1,0 +1,9 @@
+{
+  "name": "altgamingplatform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve . -p 3000",
+    "open": "start http://localhost:3000"
+  }
+}
