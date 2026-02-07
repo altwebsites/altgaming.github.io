@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System config — AltGamingPlatform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --bg-panel: #0d0d14;
+      --border: rgba(0, 245, 255, 0.2);
+      --text: #e8e8f0;
+      --text-muted: #666;
+      --accent: #00f5ff;
+      --accent-red: #ff3366;
+      --accent-green: #22c55e;
+      --font-display: 'Orbitron', sans-serif;
+      --font-body: 'Rajdhani', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .admin-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .admin-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .admin-header h1 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 0;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+    }
+    .admin-header a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .admin-header a:hover { color: var(--accent); }
+    .admin-badge {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.7rem;
+      background: var(--accent-red);
+      color: var(--bg);
+      border-radius: 4px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .panel h2 {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      margin: 0 0 1rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+    .stat-item {
+      padding: 1rem;
+      background: rgba(0,0,0,0.3);
+      border-radius: 6px;
+      border-left: 3px solid var(--accent);
+    }
+    .stat-item .value { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+    .stat-item .label { font-size: 0.85rem; color: var(--text-muted); }
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    th { color: var(--text-muted); font-weight: 600; font-size: 0.85rem; }
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .status-ok { background: var(--accent-green); }
+    .status-warn { background: #eab308; }
+    .status-err { background: var(--accent-red); }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .btn {
+      font-family: var(--font-body);
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--accent);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .btn:hover { background: rgba(0, 245, 255, 0.1); }
+    .btn-danger { border-color: var(--accent-red); color: var(--accent-red); }
+    .btn-danger:hover { background: rgba(255, 51, 102, 0.1); }
+    .actions { margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <div class="admin-wrap">
+    <header class="admin-header">
+      <div>
+        <h1>[ x7k9 PANEL ]</h1>
+        <span class="admin-badge">ADMIN</span>
+      </div>
+      <a href="../index.html">← Back to site</a>
+    </header>
+
+    <section class="panel">
+      <h2>OVERVIEW</h2>
+      <div class="stat-row">
+        <div class="stat-item">
+          <div class="value">2,412,891</div>
+          <div class="label">Online users</div>
+        </div>
+        <div class="stat-item">
+          <div class="value">12,447</div>
+          <div class="label">Total games</div>
+        </div>
+        <div class="stat-item">
+          <div class="value">99.98%</div>
+          <div class="label">Uptime</div>
+        </div>
+        <div class="stat-item">
+          <div class="value">847</div>
+          <div class="label">Active sessions</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>SERVICES</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Status</th>
+              <th>Region</th>
+              <th>Latency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Auth API</td>
+              <td><span class="status-dot status-ok"></span> OK</td>
+              <td>Global</td>
+              <td>12 ms</td>
+            </tr>
+            <tr>
+              <td>Game servers</td>
+              <td><span class="status-dot status-ok"></span> OK</td>
+              <td>EU / NA / APAC</td>
+              <td>8 ms</td>
+            </tr>
+            <tr>
+              <td>CDN</td>
+              <td><span class="status-dot status-ok"></span> OK</td>
+              <td>Edge</td>
+              <td>4 ms</td>
+            </tr>
+            <tr>
+              <td>Database replica</td>
+              <td><span class="status-dot status-warn"></span> Syncing</td>
+              <td>EU-West-2</td>
+              <td>45 ms</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="actions">
+        <button class="btn">Refresh status</button>
+        <button class="btn btn-danger">Clear cache</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>RECENT EVENTS</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Severity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2026-02-07 14:32</td>
+              <td>Deployment: launcher v2.4.1</td>
+              <td><span class="status-dot status-ok"></span> Info</td>
+            </tr>
+            <tr>
+              <td>2026-02-07 12:00</td>
+              <td>DB replica sync started</td>
+              <td><span class="status-dot status-warn"></span> Warning</td>
+            </tr>
+            <tr>
+              <td>2026-02-07 08:15</td>
+              <td>Certificate renewed</td>
+              <td><span class="status-dot status-ok"></span> Info</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
